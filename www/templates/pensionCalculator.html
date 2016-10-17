@@ -1,0 +1,39 @@
+<ion-view title="Pension Calculator" id="page3" class=" ">
+    <ion-content padding="true" class="has-header">
+        <div ng-controller="pensionCalculatorCtrl">
+            <div id="">
+                <form id="pensionCalculator-form4" class="list " ng-submit="submitForm()">
+                    <div class="list card " id="pensionCalculator-card21">
+                        <div class=" item item-image">
+                            <img src="img/pension-calculator.png" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+                        </div>
+                    </div>
+                    <label class="item item-input item-stacked-label " id="pensionCalculator-input4" name="name">
+                        <span class="input-label">Name</span>
+                        <input type="text" placeholder="E.g. Albert Ajoke" ng-model="names">
+                    </label>
+                    <label class="item item-input item-stacked-label " id="pensionCalculator-input8" name="balance">
+                        <span class="input-label">Current Balance</span>
+                        <input type="number" placeholder="E.g. 100,000" ng-model="balance">
+                    </label>
+                    <label class="item item-input item-stacked-label " id="pensionCalculator-input5" name="salary">
+                        <span class="input-label">Monthly Salary</span>
+                        <input type="number" placeholder="E.g. 250,000" ng-model="salary">
+                    </label>
+                    <label class="item item-input item-stacked-label " id="pensionCalculator-input6" name="current_age">
+                        <span class="input-label">Age</span>
+                        <input type="number" placeholder="E.g. 30" ng-model="current_age">
+                    </label>
+                    <label class="item item-input item-stacked-label " id="pensionCalculator-input7" name="retirement_age">
+                        <span class="input-label">Retirement Age</span>
+                        <input type="number" placeholder="E.g. 65" ng-model="retire_age">
+                    </label>
+
+                    <a ui-sref="tabsController.results" id="pensionCalculator-button6" class=" button button-positive button-large button-block ">Calculate Pensions</a>
+
+                </form>                        
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
